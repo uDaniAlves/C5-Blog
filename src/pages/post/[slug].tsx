@@ -65,7 +65,8 @@ export default function Post({post}: PostProps) {
         <section className={`${commonStyles.container} ${styles.postSection}`}>
           <h1>{post.data.title}</h1>
           <div>
-            <time><FiCalendar/>
+            <time>
+            <FiCalendar/>
             {
               format(
                 new Date(post.first_publication_date),
