@@ -1,17 +1,23 @@
-.mainSection {
-  max-width: 960px;
-  margin: 0 auto;
-}
-
 .logoSection {
   margin: 5rem 0;
 }
 
 .postSection {
-  a {
+  div {
     display: block;
-    & + a {
+
+    & + div {
       margin: 3rem 0;
+    }
+
+    a {
+      transition: color 0.3s;
+
+      &:hover {
+        h1 {
+          color: var(--pink-300);
+        }
+      }
     }
 
     p {
@@ -29,11 +35,20 @@
         margin-right: 0.875rem;
       }
     }
+  }
+}
+
+.footerSection {
+  button {
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 1.375rem;
+    color: var(--pink-300);
+    transition: filter 0.2s;
 
     &:hover {
-      h1 {
-        color: var(--pink-300);
-      }
+      filter: opacity(0.7);
     }
   }
 }
